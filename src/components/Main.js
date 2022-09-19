@@ -1,6 +1,7 @@
 import React from "react";
 import { addToCart, emptyCart, moveFromCart } from '../services/actions/action'
 import {useDispatch} from 'react-redux'
+import { productList } from "../services/actions/productListAction";
 
 function Main() {
 
@@ -16,6 +17,8 @@ function Main() {
         <button onClick={()=>dispatch(addToCart(product))}>Add TO Cart</button>
         <button onClick={()=>dispatch(moveFromCart(product))}>Move From Cart</button>
         <button onClick={()=>dispatch(emptyCart())}>Empty Cart</button>
+        <button onClick={()=>dispatch(productList())}>Product list</button>
+        
       </div>
     );
   }

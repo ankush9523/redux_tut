@@ -1,7 +1,6 @@
  import '../App.css'
  import React from 'react';
  import {useSelector} from 'react-redux';
-import { cartData } from '../services/reducers/reducers';
 
  function Header(){
 
